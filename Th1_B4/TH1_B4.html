@@ -1,0 +1,291 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css18.css">
+</head>
+<body>
+    <div class="parent">
+        <h3>Bacsic Info</h3>
+        <hr>
+        <div class = "parent-basicInfo">
+            <div class = "parent-basicInfo-left"> <br>
+                <label for="">Employee ID</label> <br>
+                <label for="">LastName</label> <br>
+                <label for="firstName">firstName</label> <br>
+                <label for="Gender">Gender</label> <br>
+                <label for="Title">Title</label> <br>
+                <label for="Suffix">Suffix</label> <br>
+                <label for="BirthDate">BirthDay</label> <br>
+                <label for="HireDate">HireDay</label> <br>
+                <label for="SSN # (if applicable)">SSN # (if applicable)</label> <br>
+                <label for="Reports to">Reports to</label> <br>
+            </div>
+
+            <div class = "parent-basicInfo-right">
+                <h4>9</h4>
+                <h4>Dodsworth</h4>
+                <label for="firstName">
+                    <input type="text" id="firstName">
+                </label>
+
+                <div class = "Gender">
+                    <label for="nam">
+                        <input type="radio" name="radGT" id="nam" value="nam">Male <br>
+                    </label>
+                    <label for="nu">
+                        <input type="radio" name="radGT" id="nu" value="nu">Female <br>
+                    </label>
+                    <label for="xxx">
+                        <input type="radio" name="radGT" id="xxx" value="xxx">XXX <br>
+                    </label>
+                    <label for="zzz">
+                        <input type="radio" name="radGT" id="zzz" value="zzz">ZZZ <br>
+                    </label>
+                </div>
+
+                <br>
+                <label for="Title">
+                    <input type="text" name="Title" id="Title">
+                </label>
+                
+                <br>
+                <label for="Suffix">
+                    <input type="text" name="Suffix" id="Suffix">
+                </label>
+
+                <br>
+                <label for="BirthDate">
+                    <input type="datetime-local" name="BirthDate" id="BirthDate">
+                </label>
+
+                <br>
+                <label for="HireDate">
+                    <input type="datetime-local" name="HireDate" id="HireDate">
+                </label>
+
+                <br>
+                <label for="SSN # (if applicable)">
+                    <input type="password" name="SSN # (if applicable)" id="SSN # (if applicable)">
+                </label>
+
+                <br>
+                <label for="Reports to">
+                    <select name="Reports to" id="Reports to">
+                        <option value="attribute1">attribute1</option>
+                        <option value="attribute2">attribute2</option>
+                        <option value="attribute3">attribute3</option>
+                        <option value="attribute4">attribute4</option>
+                        <option value="attribute5">attribute5</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <div class = "parent-contactInfo">
+
+        </div>
+
+
+        <div class = "parent-optionalInfo">
+
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+
+    }
+
+    form {
+        max-width: 800px;
+        margin: 0 auto;
+        border: 1px solid black;
+    }
+
+    hr {
+
+        background-color: rgb(73, 69, 69);
+        height: 2px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .Basic-infor-head {
+        margin: 20px;
+
+        margin: 0 auto;
+    }
+
+    .content {
+        margin: 20px;
+
+        display: grid;
+        grid-template-columns: 200px 500px;
+        ;
+    }
+
+    .content div {
+        margin: 3px;
+    }
+
+
+
+    .Main-content {
+        margin: 30px;
+
+    }
+
+    #gender {
+        text-align: left;
+        /* Thêm thuộc tính này để căn lề phải */
+        margin-top: 35px
+    }
+    .id{
+        font-family: "Jersey 25 Charted", sans-serif;
+        font-size: 50px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<body>
+    <form action="">
+        <div class="header">
+
+            <div class="Basic-infor-head">
+                <p style=" margin: 0 0 10px 15px;">Basic infor</p>
+                <hr>
+                <div class="content">
+
+                    <div class="content-left">
+                        <div>Employee id</div>
+                        <div>Last Name </div>
+                        <div>First Name</div>
+                        <div id="gender">Gender</div>
+
+                        <div style="margin-top: 24px;">Title</div>
+                        <div>Suffix</div>
+                        <div>BirthDate</div>
+                        <div>HireDate</div>
+                        <div>SSN # (if applicable)</div>
+                        <div style="margin-top: 10px;">Reports To</div>
+                    </div>
+                    <div class="Main-content">
+                        <div>9</div>
+                        <div>Nguyễn Văn A</div>
+                        <input type="text" style="width: 100%;" placeholder="Anne">
+                        <br> <input type="radio" name="option" />Male
+                        <br> <input type="radio" name="option" />Famale
+                        <br> <input type="radio" name="option" />XXX
+                        <br> <input type="radio" name="option" />XYZ
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <select style="width: 90px; height: 25px" name="dropdown">
+                            <option value="co so du lieu" selected>SQL</option>
+                            <option value="ngon ngu lap trinh">Java</option>
+                        </select>
+                    </div>
+
+                </div>
+                <p style=" margin: 0 0 10px 15px;">Contact Infor</p>
+                <hr>
+                <div class="content">
+
+                    <div class="content-left">
+                        <div>Email</div>
+                        <div>Address</div>
+                        <div>City</div>
+                        <div>Region</div>
+                        <div>Postal Code</div>
+                        <div>Country</div>
+                        <div>Us Home Phone</div>
+                        <div>Phone</div>
+                    </div>
+                    <div class="Main-content">
+                        <input type="text" name="" id="" placeholder="name@example.com" style="width: 100%;">
+                        <input type="text" style="width: 100%;" placeholder="Anne">
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <select style="width: 90px; height: 25px" name="dropdown">
+                            <option value="co so du lieu" selected>a</option>
+                            <option value="ngon ngu lap trinh">b</option>
+                        </select>
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                    </div>
+                </div>
+                <p style=" margin: 0 0 10px 15px;">Optional info</p>
+                <hr>
+                <div class="content">
+
+                    <div class="content-left">
+                        <div>Notes</div>
+
+                        <div style="margin-top: 20px;">Preferref Shift</div>
+                        <div style="margin-top: 15px;">Active?</div>
+                        <div style="margin-top: 55px;">Are you human</div>
+                    </div>
+                    <div class="Main-content">
+                        <input type="text" name="" id="" placeholder="name@example.com" style="width: 100%;">
+                        <div style="margin-top: 4px;">
+                            <br> <input type="checkbox">Regular
+                            <br> <input type="checkbox">Gravy yard
+                            <br> <input type="checkbox">
+                        </div>
+
+                        <h3 style="margin-top: 15px; " class="id">TIDAWO</h3>
+                       <br><p style="display: flex; justify-content:center">Click to change</p>
+                        <br><input type="text" name="" style="width: 100%;" id="" placeholder="">
+                    </div>
+                    </div>
+                    <hr>
+               <div class="footer">
+                <div class="left" >
+                <i style="font-size:30px" class="fa-solid fa-backward"></i>
+                <i style="font-size:30px" class="fa-solid fa-forward"></i>
+                </div>   
+                <div class="right">
+                    <button style="width: 100px; height:30px"><i class="fa-solid fa-book"></i>submit</button>
+                    <button style="width: 100px; height:30px"><i class="fa-solid fa-x"></i>Cancel</button>
+                </div>
+                </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+
+    </div>
+</body>
+
+</html>

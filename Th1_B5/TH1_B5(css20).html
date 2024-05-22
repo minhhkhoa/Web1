@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- liên kết css -->
+    <link rel="stylesheet" href="../Vender/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <title>Bài Thực Hành</title>
+
+    <style>
+        .container{
+            margin-top: 50px;
+            border: 2px solid blue;
+            padding: 0;
+
+        }
+
+        .nav{
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            background-color: #435D7D;
+            position: relative;
+            color: aliceblue;
+            font-size: 20px;
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+
+        .nav-remove{
+            text-align: center;
+            position: absolute;
+            color: antiquewhite;
+            width: 70px;
+            height: 25px;
+            background-color: red;
+            right: 200px;
+            top: 10px;
+            font-size: 14px;
+
+        }
+
+        .nav-add{
+            font-size: 14px;
+            text-align: center;
+            position: absolute;
+            color: antiquewhite;
+            width: 140px;
+            height: 25px;
+            background-color: #28A745;
+            top: 10px;
+            right: 50px;
+        }
+
+        table{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        th,td{
+            padding: 10px 20px;
+            border-bottom: 1px solid black;
+
+        }
+        .fa-pen{
+            color: yellow;
+        }
+        .fa-trash{
+            color: red;
+        }
+        
+        .col-md-2{
+            padding: 0;
+        }
+
+        .container-fluid{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <!-- navbar- start-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">TLU</a>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Quản Lý Nhân Viên</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm</button>
+              </form>
+            </div>
+          </nav>
+          <!-- navbar-end -->
+
+          <div class="nav">
+            Quản Lý Nhân Viên
+            <div class = "nav-remove">
+                <i class="fa-solid fa-trash"></i>
+                Xóa
+            </div>
+            <div class = "nav-add">
+                <i class="fa-solid fa-plus"></i>
+                Thêm nhân viên
+            </div>
+          </div>
+
+          <table>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>Họ và tên</th>
+                <th>Thư điện tử</th>
+                <th>Địa chỉ</th>
+                <th>Số điện thoại</th>
+                <th>Hành động</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Nguyễn Văn A</td>
+                <td>NguyenVanA@gmail.com</td>
+                <td>Hà Nội , Việt Nam</td>
+                <td>0365412132</td>
+                <td>
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Nguyễn Văn B</td>
+                <td>NguyenVanB@gmail.com</td>
+                <td>Hà Đông , Đà Nẵng</td>
+                <td>065456856</td>
+                <td>
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Nguyen Van C</td>
+                <td>NguyenVanC@gmail.com</td>
+                <td>Đống Đa</td>
+                <td>065446456</td>
+                <td>
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Nguyễn Văn D</td>
+                <td>NguyenVanD@gmail.com</td>
+                <td>Văn Quán</td>
+                <td>05446564265</td>
+                <td>
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+          </table>
+
+          <div class="footer" >
+            <div class="container-fluid">
+                <div>
+                    Hiển thị 5/25 bản ghi
+                </div>
+                <div class="row" style="width: 270px;">
+                    <div class="col-md-2">Trước</div>
+                    <div class="col-md-2">1</div>
+                    <div class="col-md-2">2</div>
+                    <div class="col-md-2">3</div>
+                    <div class="col-md-2">4</div>
+                    <div class="col-md-2">Sau</div>
+                </div>
+            </div>
+          </div>
+
+    </div>
+
+
+    <!-- liên kết jquery -->
+    <script src="../Vender/jquery/jquery.js"></script>
+    <!-- liên kết js -->
+    <script src="../Vender/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
